@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Ini adalah style dari website ini*/
+
+body {
+  font-family: fantasy;
+}
+
+
+.container {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(133,246,255,0.5) 35%, rgba(0,212,255,0.5) 100%);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 25px;
+  margin-bottom: 5px; 
+  animation-name: utama;
+  animation-duration: 1.5s;
+  overflow: auto;
+  height: 450px;
+}
+
+
+.judul h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px;
+  background: rgba(0, 255, 255, 1);
+  padding: 10px;
+  border-radius: 5%;
+  color: white;
+}
+
+.assets img {
+  width: 35%;
+  position: relative; /* atau absolute, fixed, atau sticky */
+  top: 10px; /* Jarak dari atas */
+  left: 50px; /* Jarak dari kiri */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+a {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  opacity: 2;
+  margin-top: 10px;
+  border-radius: 15px;
+  color: black;
+  transition: 0.2s;
+}
+
+p {
+  font-size: 45px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 15%;
+  padding: 15px;
+}
+
+a:active , a:hover{
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.isi p {
+  font-size: 20px;
+  background-color: rgb( 0, 255, 255, 0.5);
+  color: white;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+}
+
+@keyframes utama {
+  from {
+    height: 0px;
+  }
+  
+  to {
+    height: 450px;
+  }
+  
+}
+
